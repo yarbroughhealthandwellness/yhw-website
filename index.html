@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yarbrough Health and Wellness</title>
+  <meta name="description" content="Yarbrough Health and Wellness. Our new website is on its way.">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --surface: #ffffff;
+      --text: #1f2a24;
+      --muted: #5b6760;
+      --accent: #2f6b4f;
+      --accent-soft: #e3eee7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141a17;
+        --surface: #1c2420;
+        --text: #e9efeb;
+        --muted: #a3b0a8;
+        --accent: #7fc4a0;
+        --accent-soft: #24332b;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+    main {
+      background: var(--surface);
+      max-width: 560px;
+      width: 100%;
+      padding: 48px 32px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+    .mark {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.02em;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 600;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    p { color: var(--muted); }
+    footer {
+      margin-top: 36px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">YHW</div>
+    <span class="tag">Coming soon</span>
+    <h1>Yarbrough Health and Wellness</h1>
+    <p>Our new website is on its way. Please check back soon.</p>
+    <footer>&copy; <span id="year">2026</span> Yarbrough Health and Wellness</footer>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
